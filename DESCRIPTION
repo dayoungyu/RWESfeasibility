@@ -18,3 +18,5 @@ Imports:
     tibble,
     ggplot2,
     reshape2
+URL: https://github.com/dayoungyu/RWESfeasibility
+BugReports: https://github.com/dayoungyu/RWESfeasibility/issues
