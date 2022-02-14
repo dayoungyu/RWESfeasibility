@@ -1,0 +1,50 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# RWESfeasibility
+
+The goal of RWESfeasibility is to run simulations for finding CIs of extrapolated feasibility counts with weighted proportions.
+
+## Installation
+
+You can install the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("dayoungyu/RWESfeasibility")
+```
+
+## Example
+
+```{r example, results='hide'}
+library(RWESfeasibility)
+
+n_cohorts = 3
+n_den = c(160, 250, 100)
+n_rev = c(50, 50, 45)
+n_case = c(32, 2, 19)
+N_sim = 1000
+
+sim_results = ci_sim(n_cohorts, n_den, n_rev, n_case, N_sim)
+
+
+```
+
+
+##### Summary table output
+```{r}
+sim_results$summary_table
+```
+
