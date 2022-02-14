@@ -1,0 +1,20 @@
+Package: RWESfeasibility
+Title: Real-world evidence sciences feasibility
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Rebekah",
+           family = "Yu",
+           role = c("aut", "cre"),
+           email = "rebekah.yu21@gmail.com")
+Description: Runs simulations for finding CIs for extrapolated feasibility counts with weighted proportions
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.2
+Imports: 
+    magrittr,
+    dplyr,
+    tibble,
+    ggplot2,
+    reshape2
